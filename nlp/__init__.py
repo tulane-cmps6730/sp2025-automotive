@@ -2,8 +2,8 @@
 
 """Top-level package for nlp."""
 
-__author__ = """A Student"""
-__email__ = 'student@example.com'
+__author__ = """Andrew Selius"""
+__email__ = 'aselius@tulane.edu'
 __version__ = '0.1.0'
 
 # -*- coding: utf-8 -*-

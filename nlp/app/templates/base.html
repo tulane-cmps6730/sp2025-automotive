@@ -1,23 +1,25 @@
 <html>
     <head>
       {% if title %}
-      <title>{{ title }} - nlp</title>
+      <title>{{ title }} - Automotive-Reviewer</title>
       {% else %}
-      <title>nlp</title>
+      <title>AutoReviewer</title>
       {% endif %}
       <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     </head>
     <body>
-        <div>my nlp project</div>
+        <div>Auto Reviewer</div>
+        <div>Ask about a car brand (e.g., 'Is Honda reliable?')</div>
+        <div>Available brands to ask about: Honda, Toyota, Subaru, Jeep, BMW, Mazda, Tesla, Dodge, Ford, Chevrolet</div>
         <hr>
         {% if form.errors %}
         {{ form.errors }}
         {% endif %}
         
         {% block content %}{% endblock %}
-        {% if confidence %}
+        {% if answer %}
         <p class="lead my-4" style="color: blue">
-           Prediction = {{ prediction }}  <br> Confidence = {{ confidence }}
+           Answer = {{ answer }}
         </p>
         {% endif %}
         {% with messages = get_flashed_messages() %}
