@@ -30,8 +30,8 @@ import os
 csv_path = os.path.join(
     os.path.dirname(__file__),
     'reviews.csv') # Replace with path as necessary
-model_name = "t5-small"	
-embedder_name = "multi-qa-MiniLM-L6-cos-v1"
+model_name = "t5-base"	
+embedder_name = "all-MiniLM-L6-v2"
 top_k = 7
 
 topic_keywords = {
